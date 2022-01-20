@@ -1,0 +1,16 @@
+{# /templates/table.html.twig #}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<table>
+		<tr><td>Name</td><td>Surname</td><td>Age</td></tr>
+		{% for player in players %}
+		   <tr><td>{{ player.name }}</td><td>{{ player.surname }}</td><td>{{ player.age }}</td>
+		{% endfor %}
+		</table>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+{# /templates/list.html.twig #}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>List</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<ul>
+		{% for row in rows %}
+		   <li><a href = {{ path("fake", {'num':row.cod})}}> {{ row.name }} </a>
+		{% endfor %}
+		</ul>
+	</body>
+</html>

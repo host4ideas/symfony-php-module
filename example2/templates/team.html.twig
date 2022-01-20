@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Team</title>		
+    </head>
+    <body>
+	   {% if team is null  %}
+	   Team not found
+	   {% else %}
+	   Name: {{team.name}} <br>
+	   City: {{team.name}} <br>
+	   Members: {{team.members}} <br>
+	   Founded: {{team.founded}} <br>
+	   {% endif %}		
+    </body>
+</html>

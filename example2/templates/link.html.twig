@@ -1,0 +1,11 @@
+{# /templates/greeting.html.twig #}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Link</title>
+	</head>
+	<body>
+	   <a href = "{{ path("table") }}">Table</a> <br>
+	   <a href = "{{ path("productName",{'num1': 3, 'num2':5 }) }}">3 multiplied by 5</a>
+	</body>
+</html>

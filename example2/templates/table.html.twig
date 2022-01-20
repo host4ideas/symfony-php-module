@@ -1,0 +1,16 @@
+{# /templates/table.html.twig #}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<table>
+		<tr><td>Code</td><td>Name</td></tr>
+		{% for row in rows %}
+		   <tr><td>{{ row.cod }}</td><td>{{ row.name }}</td>
+		{% endfor %}
+		</table>
+	</body>
+</html>
